@@ -16,7 +16,7 @@ EMAIL_PASSWORD=os.getenv('EMAIL_PASSWORD')
 url = "https://appbrewery.github.io/instant_pot/"
 live_url = "https://www.amazon.de/gp/aw/d/B0854FJNSD/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=8a39a5691104864212aadbc708255a6f&hsa_cr_id=0&qid=1761306899&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=Gcq4NQYxli&ref_=sbx_s_sparkle_sbtcd_asin_0_img&pd_rd_w=cxeC8&content-id=amzn1.sym.17ff4c80-d3f6-4458-af23-4ad6a620d092%3Aamzn1.sym.17ff4c80-d3f6-4458-af23-4ad6a620d092&pf_rd_p=17ff4c80-d3f6-4458-af23-4ad6a620d092&pf_rd_r=PVA8EVER0804HF5HG9A7&pd_rd_wg=xdE3k&pd_rd_r=74e88109-0f09-4ccd-9deb-f278f2c3ea22&th=1"
 
-headers = {"User-Agent": "Mozilla/5.0"}
+headers = {"User-Agent": "Mozilla/5.0", "Accept-Language": "de-DE,de", }
 response = requests.get(live_url, headers=headers)
 
 #Parse using BeautifulSoup

@@ -1,0 +1,9 @@
+# Virtuelle Umgebung
+venv/
+
+# Umgebungsvariablen (geheime Daten)
+.env
+
+# Python Cache-Dateien
+__pycache__/
+*.py[cod]
